@@ -96,7 +96,7 @@ class CreateOrderForLastPass(object):
     def signHandler(self):
 
         if self.passid == 79:
-            sign = SignBase(
+            sign = SignBaseCustom(
                 hashData=self.request_data,
                 signData=self.request_data_sign,
                 signRules=self.rules['sign']
